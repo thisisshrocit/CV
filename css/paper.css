@@ -1,5 +1,5 @@
 @page { margin: 0 }
-body { margin: 0 }
+body { margin: 0 , padding 0;}
 .sheet {
   margin: 0;
   overflow: hidden;
@@ -28,7 +28,8 @@ body.A5.landscape .sheet { width: 210mm; height: 147mm; margin-left: auto; margi
   .sheet {
     background: white;
     box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
-    margin: 5mm;
+    /*margin: 5mm;*/
+    margin: 0;
   }
 }
 

@@ -47,7 +47,7 @@ permalink: /
             <li>&bull;&emsp;Age: {{ site.data.my_info.age }}&emsp;</li>
             <li>&bull;&emsp;Gender: {{ site.data.my_info.gender }}&emsp;</li><br>
             <li>&bull;&emsp;Nationality: {{ site.data.my_info.nationality }}&emsp;</li>
-            <li>&bull;&emsp;Education: {{ site.data.my_info.degree }}&emsp;</li>
+            <li>&bull;&emsp;Degree: {{ site.data.my_info.degree }}&emsp;</li>
           </ul>
         </div>
         <div class="social_information">
@@ -67,52 +67,106 @@ permalink: /
           </ul>
         </div>
       </div>
+
       <div id="summary">
-        <i class="fa fa-info-circle fa-lg"></i> <span class="item">Summary</span>
+        <i class="fa fa-info-circle fa-lg"></i> <p class="item">Summary</p>
         <hr>
-        <p>{{ site.data.my_summary.summary }}</p>
+        <span style="line-height: 7mm;">{{ site.data.my_summary.summary }}</span>
       </div>
-      <div id="education">
-        <i class="fa fa-mortar-board fa-lg"></i> <span class="item">Education</span>
-        <hr>
-        <p>{{ site.data.my_summary.summary }}</p>
-      </div>
+
       <div id="work-experience">
-        <i class="fa fa-users fa-lg"></i> <span class="item">Work Experience</span>
+        <i class="fa fa-users fa-lg"></i> <p class="item">Work Experience</p>
         <hr>
-        {% for edu in site.data.my_education %}
-        <div style="height: 50px;">
-        <div style="float: left;">
-          <span>{{ edu.school }}</span><span>{{ edu.location }}</span><br>
-          <span>{{ edu.curriculum }}</span><span>{{ edu.degree }}</span>
+        {% for work in site.data.my_work %}
+        <div style="height: 28mm;">
+        <div style="float: left;height: 28mm;width: 78%;">
+          <span class="arial-black">{{ work.company }}</span>
+          <span class="trebuchet">({{ work.location }})</span>
+          <span class="trebuchet">{{ work.title }}</span>
+          <br>
+          <span class="degree">{{ work.desc }}</span>
         </div>
-        <p style="float: right;">{{ edu.fromto }}</p>
+        <p class="work-fromto">{{ work.fromto }}</p>
         </div>
         {% endfor %}
       </div>
-      <div id="skills">
-        <i class="fa fa-cogs fa-lg"></i> <span class="item">Skills</span>
+
+      <div id="education">
+        <i class="fa fa-mortar-board fa-lg"></i> <p class="item">Education</p>
         <hr>
-        <p>{{ site.data.my_summary.summary }}</p>
+        {% for edu in site.data.my_education %}
+        <div style="height: 21mm;">
+        <div style="float: left;height: 21mm;width: 78%;">
+          <span class="arial-black">{{ edu.school }}</span>
+          <span class="trebuchet">{{ edu.location }}</span>
+          <br>
+          <span class="degree">{{ edu.degree }}</span>
+          <span class="arial">{{ edu.curriculum }}</span>
+        </div>
+        <p class="edu-fromto">{{ edu.fromto }}</p>
+        </div>
+        {% endfor %}
       </div>
+
       <div id="language">
-        <i class="fa fa-commenting fa-lg"></i> <span class="item">Language</span>
+        <i class="fa fa-commenting fa-lg"></i> <p class="item">Language</p>
         <hr>
-        <p>{{ site.data.my_summary.summary }}</p>
+        <ul>
+          {% for lang in site.data.my_language %}
+          <li><span class="arial-rounded">{{ lang.language }}</span><span class="trebuchet">{{ lang.level }}</span></li>
+          {% endfor%}
+        </ul>
       </div>
-      <div id="project">
-        <i class="fa fa-code fa-lg"></i> <span class="item">Open Source Project</span>
-        <hr>
-        <p>{{ site.data.my_summary.summary }}</p>
-      </div>
-      <div id="research">
-        <i class="fa fa-institution fa-lg"></i> <span class="item">Research</span>
-        <hr>
-        <p>{{ site.data.my_summary.summary }}</p>
-      </div>
+
     </article>
 
   </section>
+
+  <!-- second page -->
+  <section class="sheet padding-20mm">
+    <article>
+
+      <div id="skills">
+        <i class="fa fa-cogs fa-lg"></i> <p class="item">Skills</p>
+        <hr>
+        <span class="arial-rounded">Program Language:</span><span class="trebuchet">{{ site.data.my_skills.program_language }}</span><br>
+        <span class="arial-rounded">Platform:</span><span class="trebuchet">{{ site.data.my_skills.platform }}</span><br>
+        <span class="arial-rounded">Development:</span><span class="trebuchet">{{ site.data.my_skills.development }}</span><br>
+        <span class="arial-rounded">Technology Stack:</span><span class="trebuchet">{{ site.data.my_skills.stack }}</span><br>
+      </div>
+
+      <div id="project">
+        <i class="fa fa-code fa-lg"></i> <p class="item">Projects at Github</p>
+        <hr>
+        {% for project in site.data.my_project %}
+        <span class="arial-black">{{ project.name }}</span>
+        <span class="trebuchet">{{ project.language }}</span>
+        <br>
+        <span class="degree">{{ project.desc }}</span>
+        <br>
+        {% endfor %}
+      </div>
+
+      <div id="research">
+        <i class="fa fa-institution fa-lg"></i> <p class="item">Research</p>
+        <hr>
+        <ul>
+          {% for research in site.data.my_research %}
+          <li><span class="arial-rounded">{{ research.name }}</span><span class="trebuchet">{{ research.details }}</span></li>
+          {% endfor%}
+        </ul>
+      </div>
+
+    </article>
+  </section>
+
+    <!-- if two pages are not enough for you, please cut some sections to this page
+    <section class="sheet padding-20mm">
+    <article>
+
+    </article>
+  </section>
+    -->
 
 </body>
 

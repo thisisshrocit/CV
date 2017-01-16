@@ -1,0 +1,25 @@
+# My project
+
+- name: Saplatform
+  language: Python (Django)
+  desc: Saplatform is a Django project, it manages servers with saltstack, it can deploy project automatic.
+
+- name: Leetcode
+  language: Python
+  desc: I forked kamyu104's project and added some more solutions for LeetCode's algorithmic questions.
+
+- name: jalpc_jekyll_theme
+  language: HTML, CSS, JS
+  desc: Jalpc is my blog website. I builded it with Jekyll and there are some API provided by Flask on Vultr.
+
+- name: Jalpc-A
+  language: HTML, CSS, JS (Angularjs)
+  desc: Jalpc is another blog website, it's written by Angularjs, data is storaged at Leancloud like Parse in America.
+
+- name: Rsser
+  language: HTML, CSS, JS (Ionic)
+  desc: Rsser is a smart phone App written by Ionic.
+
+- name: CV
+  language: HTML, CSS
+  desc: CV is my resume website.

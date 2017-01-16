@@ -8,30 +8,40 @@ ul,li {
 }
 
 i {
-	width: 16px;
-	margin-right: 3px;
+	width: 4mm;
+	margin-right: 1mm;
 }
 
 ul.basic_info li {
 	display: inline;
+	line-height: 6mm;
 }
 
 div.social_information ul li {
-	font-size: 14px;
-	margin: 4px auto;
+	font-size: 3.7mm;
+	margin: 1.2mm auto;
+	line-height: 5.5mm;
+}
+
+#language ul, #research ul {
+	margin-left: 4mm;
+}
+
+#education, #work-experience, #skills, #language, #project, #research {
+	margin-top: 3mm;
 }
 
 .information {
 	margin: 0;
 	padding: 0;
-	height: 120px;
+	height: 35mm;
 }
 
 .cv_name {
 	font-family: Monospace;
-	font-size: 45px;
+	font-size: 11.8mm;
 	margin-top: 0;
-	line-height: 35px;
+	line-height: 12mm;
 }
 
 .cv_title {
@@ -48,7 +58,49 @@ div.social_information ul li {
 }
 
 .item {
-	font-family: Impact;
-	line-height: 21px;
-	margin-left: 7.5px;
+	font-family: Arial Black;
+	line-height: 4mm;
+	margin-left: 3mm;
+	display: inline;
+}
+
+span {
+	line-height: 7mm;
+}
+
+.arial-black {
+	font-family: Arial Black;
+}
+
+.trebuchet {
+	font-family: Trebuchet MS;
+}
+
+.arial-rounded {
+	font-family: Arial Rounded MT Bold;
+}
+.trebuchet, .arial {
+	margin-left: 3mm;
+}
+
+.arial, .degree {
+	font-family: Arial;
+}
+
+.edu-fromto {
+	font-family: Trebuchet MS;
+	float: right;
+	line-height: 21mm;
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 20%;
+}
+
+.work-fromto {
+	font-family: Trebuchet MS;
+	float: right;
+	line-height: 28mm;
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 20%;
 }
