@@ -39,7 +39,7 @@ div.social_information ul li {
 
 .cv_name {
 	font-family: Monospace;
-	font-size: 11.8mm;
+	font-size: 12mm;
 	margin-top: 0;
 	line-height: 12mm;
 }
@@ -59,7 +59,8 @@ div.social_information ul li {
 
 .item {
 	font-family: Arial Black;
-	line-height: 4mm;
+	font-size: 5.5mm;
+	line-height: 5mm;
 	margin-left: 3mm;
 	display: inline;
 }
