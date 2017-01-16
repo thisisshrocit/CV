@@ -2,10 +2,13 @@
 
 first_name: 'Kun'
 last_name: 'Jia'
-job_title: 'Full stack developer/Python developer'
+job_title: 'Full stack developer (Python)'
+age: 26
+gender: 'Male'
 github_username: 'JiaKunUp'
-address : 'Pudong new district, Shanghai, China'
+address : 'Pudong new area, Shanghai, China'
 email: 'me@jack003.com'
 phone: '+86 18916691387'
 website: 'http://www.jack003.com'
-avatar: 'images/Jack.jpg'
+nationality: 'China'
+degree: 'Bachlor'

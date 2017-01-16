@@ -8,13 +8,21 @@ permalink: /
 
 <head>
   <meta charset="utf-8">
-  <title>My CV</title>
+  <title>CV-{{ site.data.my_info.first_name }}_{{ site.data.my_info.last_name }}</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
 
   <!-- Normalize or reset CSS with your favorite library -->
   <link rel="stylesheet" href="css/normalize-3.0.3.css">
 
   <!-- Load paper.css for happy printing -->
   <link rel="stylesheet" href="css/paper.css">
+
+  <!-- Load font-awesome.css for icons -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Load my custon.css -->
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Set page size here: A5, A4 or A3 -->
   <!-- Set also "landscape" if you need -->
@@ -30,15 +38,79 @@ permalink: /
   <section class="sheet padding-20mm">
 
     <!-- Write HTML just like a web page -->
-    <article>This is the first sheet.</article>
-
-  </section>
-
-  <!-- The second sheet -->
-  <section class="sheet padding-20mm">
-
-    <!-- Write HTML just like a web page -->
-    <article>This is the second sheet.</article>
+    <article>
+      <div class="information">
+        <div class="basic_information">
+          <h1 class="cv_name">{{ site.data.my_info.first_name }} {{ site.data.my_info.last_name }}</h1>
+          <h2 class="cv_title"  >{{ site.data.my_info.job_title }}</h2>
+          <ul class="basic_info">
+            <li>&bull;&emsp;Age: {{ site.data.my_info.age }}&emsp;</li>
+            <li>&bull;&emsp;Gender: {{ site.data.my_info.gender }}&emsp;</li><br>
+            <li>&bull;&emsp;Nationality: {{ site.data.my_info.nationality }}&emsp;</li>
+            <li>&bull;&emsp;Education: {{ site.data.my_info.degree }}&emsp;</li>
+          </ul>
+        </div>
+        <div class="social_information">
+          <ul style="list-style: none;float: left;">
+            <li><i class="fa fa-github"></i></li>
+            <li><i class="fa fa-map-marker"></i></li>
+            <li><i class="fa fa-envelope"></i></li>
+            <li><i class="fa fa-phone"></i></li>
+            <li><i class="fa fa-globe"></i></li>
+          </ul>
+          <ul style="list-style: none;float: right;">
+            <li>{{ site.data.my_info.github_username }}</li>
+            <li>{{ site.data.my_info.address }}</li>
+            <li>{{ site.data.my_info.email }}</li>
+            <li>{{ site.data.my_info.phone }}</li>
+            <li>{{ site.data.my_info.website }}</li>
+          </ul>
+        </div>
+      </div>
+      <div id="summary">
+        <i class="fa fa-info-circle fa-lg"></i> <span class="item">Summary</span>
+        <hr>
+        <p>{{ site.data.my_summary.summary }}</p>
+      </div>
+      <div id="education">
+        <i class="fa fa-mortar-board fa-lg"></i> <span class="item">Education</span>
+        <hr>
+        <p>{{ site.data.my_summary.summary }}</p>
+      </div>
+      <div id="work-experience">
+        <i class="fa fa-users fa-lg"></i> <span class="item">Work Experience</span>
+        <hr>
+        {% for edu in site.data.my_education %}
+        <div style="height: 50px;">
+        <div style="float: left;">
+          <span>{{ edu.school }}</span><span>{{ edu.location }}</span><br>
+          <span>{{ edu.curriculum }}</span><span>{{ edu.degree }}</span>
+        </div>
+        <p style="float: right;">{{ edu.fromto }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      <div id="skills">
+        <i class="fa fa-cogs fa-lg"></i> <span class="item">Skills</span>
+        <hr>
+        <p>{{ site.data.my_summary.summary }}</p>
+      </div>
+      <div id="language">
+        <i class="fa fa-commenting fa-lg"></i> <span class="item">Language</span>
+        <hr>
+        <p>{{ site.data.my_summary.summary }}</p>
+      </div>
+      <div id="project">
+        <i class="fa fa-code fa-lg"></i> <span class="item">Open Source Project</span>
+        <hr>
+        <p>{{ site.data.my_summary.summary }}</p>
+      </div>
+      <div id="research">
+        <i class="fa fa-institution fa-lg"></i> <span class="item">Research</span>
+        <hr>
+        <p>{{ site.data.my_summary.summary }}</p>
+      </div>
+    </article>
 
   </section>
 

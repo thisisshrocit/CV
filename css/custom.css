@@ -1,0 +1,54 @@
+h1, h2, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+ul,li {
+	font-family: Arial;
+}
+
+i {
+	width: 16px;
+	margin-right: 3px;
+}
+
+ul.basic_info li {
+	display: inline;
+}
+
+div.social_information ul li {
+	font-size: 14px;
+	margin: 4px auto;
+}
+
+.information {
+	margin: 0;
+	padding: 0;
+	height: 120px;
+}
+
+.cv_name {
+	font-family: Monospace;
+	font-size: 45px;
+	margin-top: 0;
+	line-height: 35px;
+}
+
+.cv_title {
+	font-family: Comic Sans MS;
+}
+
+.basic_information {
+	float: left;
+	width: 60%;
+}
+
+.social_information {
+	float: right;
+}
+
+.item {
+	font-family: Impact;
+	line-height: 21px;
+	margin-left: 7.5px;
+}
