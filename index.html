@@ -8,7 +8,7 @@ permalink: /
 
 <head>
   <meta charset="utf-8">
-  <title>CV-{{ site.data.my_info.first_name }}_{{ site.data.my_info.last_name }}</title>
+  <title>CV-{{ site.data.my_information.first_name }}_{{ site.data.my_information.last_name }}</title>
 
   <link rel="shortcut icon" href="img/favicon.ico">
 
@@ -41,13 +41,13 @@ permalink: /
     <article>
       <div class="information">
         <div class="basic_information">
-          <h1 class="cv_name">{{ site.data.my_info.first_name }} {{ site.data.my_info.last_name }}</h1>
-          <h2 class="cv_title"  >{{ site.data.my_info.job_title }}</h2>
+          <h1 class="cv_name">{{ site.data.my_information.first_name }} {{ site.data.my_information.last_name }}</h1>
+          <h2 class="cv_title"  >{{ site.data.my_information.job_title }}</h2>
           <ul class="basic_info">
-            <li>&bull;&emsp;Age: {{ site.data.my_info.age }}&emsp;</li>
-            <li>&bull;&emsp;Gender: {{ site.data.my_info.gender }}&emsp;</li><br>
-            <li>&bull;&emsp;Nationality: {{ site.data.my_info.nationality }}&emsp;</li>
-            <li>&bull;&emsp;Degree: {{ site.data.my_info.degree }}&emsp;</li>
+            <li>&bull;&emsp;Age: {{ site.data.my_information.age }}&emsp;</li>
+            <li>&bull;&emsp;Gender: {{ site.data.my_information.gender }}&emsp;</li><br>
+            <li>&bull;&emsp;Nationality: {{ site.data.my_information.nationality }}&emsp;</li>
+            <li>&bull;&emsp;Degree: {{ site.data.my_information.degree }}&emsp;</li>
           </ul>
         </div>
         <div class="social_information">
@@ -59,11 +59,11 @@ permalink: /
             <li><i class="fa fa-globe"></i></li>
           </ul>
           <ul style="list-style: none;float: right;">
-            <li>{{ site.data.my_info.github_username }}</li>
-            <li>{{ site.data.my_info.address }}</li>
-            <li>{{ site.data.my_info.email }}</li>
-            <li>{{ site.data.my_info.phone }}</li>
-            <li>{{ site.data.my_info.website }}</li>
+            <li>{{ site.data.my_information.github_username }}</li>
+            <li>{{ site.data.my_information.address }}</li>
+            <li>{{ site.data.my_information.email }}</li>
+            <li>{{ site.data.my_information.phone }}</li>
+            <li>{{ site.data.my_information.website }}</li>
           </ul>
         </div>
       </div>
@@ -169,5 +169,15 @@ permalink: /
     -->
 
 </body>
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?{{ site.ba.uuid }}";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
 
 </html>
