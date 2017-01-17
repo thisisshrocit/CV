@@ -78,8 +78,8 @@ permalink: /
         <i class="fa fa-users fa-lg"></i> <p class="item">Work Experience</p>
         <hr>
         {% for work in site.data.my_work %}
-        <div style="height: 28mm;">
-        <div style="float: left;height: 28mm;width: 78%;">
+        <div style="height: 35mm;">
+        <div style="float: left;height: 35mm;width: 78%;">
           <span class="arial-black">{{ work.company }}</span>
           <span class="trebuchet">({{ work.location }})</span>
           <span class="trebuchet">{{ work.title }}</span>
@@ -108,6 +108,16 @@ permalink: /
         {% endfor %}
       </div>
 
+
+
+    </article>
+
+  </section>
+
+  <!-- second page -->
+  <section class="sheet padding-20mm">
+    <article>
+
       <div id="language">
         <i class="fa fa-commenting fa-lg"></i> <p class="item">Language</p>
         <hr>
@@ -117,14 +127,6 @@ permalink: /
           {% endfor%}
         </ul>
       </div>
-
-    </article>
-
-  </section>
-
-  <!-- second page -->
-  <section class="sheet padding-20mm">
-    <article>
 
       <div id="skills">
         <i class="fa fa-cogs fa-lg"></i> <p class="item">Skills</p>
