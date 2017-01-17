@@ -4,16 +4,16 @@
   location: China, Shanghai
   title: Python Developer
   fromto: 2016-4 ~ Now
-  desc: Nextcode is a gene company, I build website for gene analysis and automatization systems.
+  desc: Nextcode is a gene company, I build website with Django for gene analysis and automatization systems.
 
 - company: Netease Game
   location: China, Shanghai
   title: Devops
   fromto: 2015-6 ~ 2016-4
-  desc: Netease is a big game company, I did some Devops work at a department servicing Blizzard Entertainment.
+  desc: Netease is a big game company, I did Devops work and CMDB system at a department servicing Blizzard Entertainment.
 
 - company: Ucloud
   location: China, Shanghai
   title: Devops
   fromto: 2013-9 ~ 2015-5
-  desc: Ucloud is a Cloud computing company, I worked here to build CMDB system and manage mass servers.
+  desc: Ucloud is a Cloud computing company, I worked there to build CMDB system and manage mass servers.

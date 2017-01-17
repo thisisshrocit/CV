@@ -10,7 +10,7 @@
 
 - name: jalpc_jekyll_theme
   language: HTML, CSS, JS
-  desc: Jalpc is my blog website. I builded it with Jekyll and there are some API provided by Flask on Vultr.
+  desc: Jalpc is my blog website. I built it with Jekyll and there are some API provided by Flask on Vultr.
 
 - name: Jalpc-A
   language: HTML, CSS, JS (Angularjs)
