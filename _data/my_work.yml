@@ -1,19 +1,19 @@
 # My work
 
-- company: Nextcode
-  location: China, Shanghai
+- company: WuXi NextCODE
+  location: Shanghai, China
   title: Python Developer
   fromto: 2016-4 ~ Now
-  desc: Wuxi Nextcode is a international gene company. I build web servers with python/django, html, css, js/angularjs/jQuery/vuejs. I use Fabric to deploy program code on cloud servers and use docker to deploy code on internal servers.
+  desc: WuXi NextCODE is a international gene company, it's subcompany of WuXi AppTec. I build website with python/django, html, css, js/angularjs/jQuery/vuejs. I use Fabric to deploy code on cloud servers and use docker to deploy code on internal servers.
 
 - company: Netease Game
-  location: China, Shanghai
+  location: Shanghai, China
   title: Devops
   fromto: 2015-6 ~ 2016-4
   desc: Netease is a very big game company in China, my department is cooperation department of Blizzard Entertainment, I built automatization systems for ops team with Python/Django, and some daily ops work.
 
 - company: Ucloud
-  location: China, Shanghai
+  location: Shanghai, China
   title: Devops
   fromto: 2013-9 ~ 2015-5
   desc: Ucloud is one of the most competitive Cloud computing company in China, my daily work is to manage mass cloud servers with powerful tools like saltstack and shell/Python script, besides I am a member of CMDB develop team.
