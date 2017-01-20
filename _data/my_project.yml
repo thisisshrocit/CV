@@ -1,5 +1,9 @@
 # My project
 
+- name: FamilyCODE wechat
+  language: Python(Django), JS(jQuery)
+  desc: FamilyCODE is WuXi NextCODE's first B2C product, it's a tiny mall on wechat, I lead this 3 members' team.
+
 - name: Saplatform
   language: Python (Django)
   desc: Saplatform is a Django project, it manages servers with saltstack, it can deploy project automatic.
@@ -10,11 +14,11 @@
 
 - name: jalpc_jekyll_theme
   language: HTML, CSS, JS
-  desc: Jalpc is my blog website. I built it with Jekyll and there are some API provided by Flask on Vultr.
+  desc: Jalpc is my blog website. I built it with Jekyll on github and there are some API provided by Flask on Vultr. I made lots of friends through this repository.
 
 - name: Jalpc-A
   language: HTML, CSS, JS (Angularjs)
-  desc: Jalpc is another blog website, it's written by Angularjs, data is storaged at Leancloud like Parse in America.
+  desc: Jalpc-A is another blog website, it's written by Angularjs, backhend is Leancloud I use API to store data, Leancloud like Parse in America.
 
 - name: Rsser
   language: HTML, CSS, JS (Ionic)
